@@ -1,0 +1,16 @@
+body {
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: monospace;
+}
+
+#clock {
+    color: #00ff00;
+    font-size: 5vw;
+    line-height: 1.2;
+    white-space: pre;
+}
