@@ -1,24 +1,41 @@
-
-/* Default styles for larger screens */
+/* General styles */
 body {
-    font-size: 18px;
-    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    animation: backgroundChange 10s infinite;
 }
 
+/* Styling the clock */
 .clock {
     font-size: 48px;
-    margin: 20px auto;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    animation: tick 1s infinite;
+    transition: background-color 0.5s ease;
 }
 
-/* Styles for smaller screens like smartphones */
+/* Media query for smaller devices */
 @media (max-width: 600px) {
-    body {
-        font-size: 16px;
-    }
-
     .clock {
         font-size: 32px;
-        margin: 10px auto;
+        padding: 15px;
     }
 }
 
+@keyframes tick {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes backgroundChange {
+    0% { background-color: #333; }
+    50% { background-color: #555; }
+    100% { background-color: #333; }
+}
