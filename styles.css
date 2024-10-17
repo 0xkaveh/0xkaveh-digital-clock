@@ -6,7 +6,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    animation: backgroundChange 10s infinite;
+    animation: backgroundChange 10s infinite alternate;
 }
 
 /* Styling the clock */
@@ -30,7 +30,7 @@ body {
 
 @keyframes tick {
     0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
+    50% { transform: scale(1.02); } /* Subtle scaling for smoother effect */
     100% { transform: scale(1); }
 }
 
