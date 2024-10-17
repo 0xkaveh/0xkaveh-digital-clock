@@ -1,16 +1,24 @@
+
+/* Default styles for larger screens */
 body {
-    background-color: #1e1e1e;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    font-family: monospace;
+    font-size: 18px;
+    background-color: #f0f0f0;
 }
 
-#clock {
-    color: #00ff00;
-    font-size: 2vw;
-    line-height: 1.4;
-    white-space: pre;
+.clock {
+    font-size: 48px;
+    margin: 20px auto;
 }
+
+/* Styles for smaller screens like smartphones */
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+
+    .clock {
+        font-size: 32px;
+        margin: 10px auto;
+    }
+}
+
